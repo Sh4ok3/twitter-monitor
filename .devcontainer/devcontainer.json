@@ -1,0 +1,12 @@
+{
+  "name": "Twitter Monitor",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "features": {
+    "git": "latest"
+  },
+  "postCreateCommand": "pip install -r requirements.txt",
+  "remoteEnv": {
+    "HTTP_PROXY": "${localEnv:HTTP_PROXY}",
+    "HTTPS_PROXY": "${localEnv:HTTPS_PROXY}"
+  }
+}
